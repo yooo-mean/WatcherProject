@@ -1,0 +1,15 @@
+D:\_Projects\WatcherProject\WatcherUI\WatcherUI\obj\Debug\WatcherUI.csproj.AssemblyReference.cache
+D:\_Projects\WatcherProject\WatcherUI\WatcherUI\obj\Debug\MainWindow.g.cs
+D:\_Projects\WatcherProject\WatcherUI\WatcherUI\obj\Debug\App.g.cs
+D:\_Projects\WatcherProject\WatcherUI\WatcherUI\obj\Debug\WatcherUI_MarkupCompile.cache
+D:\_Projects\WatcherProject\WatcherUI\WatcherUI\obj\Debug\WatcherUI_MarkupCompile.lref
+D:\_Projects\WatcherProject\WatcherUI\WatcherUI\bin\Debug\WatcherUI.exe.config
+D:\_Projects\WatcherProject\WatcherUI\WatcherUI\bin\Debug\WatcherUI.exe
+D:\_Projects\WatcherProject\WatcherUI\WatcherUI\bin\Debug\WatcherUI.pdb
+D:\_Projects\WatcherProject\WatcherUI\WatcherUI\obj\Debug\MainWindow.baml
+D:\_Projects\WatcherProject\WatcherUI\WatcherUI\obj\Debug\WatcherUI.g.resources
+D:\_Projects\WatcherProject\WatcherUI\WatcherUI\obj\Debug\WatcherUI.Properties.Resources.resources
+D:\_Projects\WatcherProject\WatcherUI\WatcherUI\obj\Debug\WatcherUI.csproj.GenerateResource.cache
+D:\_Projects\WatcherProject\WatcherUI\WatcherUI\obj\Debug\WatcherUI.csproj.CoreCompileInputs.cache
+D:\_Projects\WatcherProject\WatcherUI\WatcherUI\obj\Debug\WatcherUI.exe
+D:\_Projects\WatcherProject\WatcherUI\WatcherUI\obj\Debug\WatcherUI.pdb
