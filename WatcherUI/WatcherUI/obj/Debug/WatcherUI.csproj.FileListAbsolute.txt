@@ -13,3 +13,6 @@ D:\_Projects\WatcherProject\WatcherUI\WatcherUI\obj\Debug\WatcherUI.csproj.Gener
 D:\_Projects\WatcherProject\WatcherUI\WatcherUI\obj\Debug\WatcherUI.csproj.CoreCompileInputs.cache
 D:\_Projects\WatcherProject\WatcherUI\WatcherUI\obj\Debug\WatcherUI.exe
 D:\_Projects\WatcherProject\WatcherUI\WatcherUI\obj\Debug\WatcherUI.pdb
+D:\_Projects\WatcherProject\WatcherUI\WatcherUI\bin\Debug\System.CodeDom.dll
+D:\_Projects\WatcherProject\WatcherUI\WatcherUI\bin\Debug\System.CodeDom.xml
+D:\_Projects\WatcherProject\WatcherUI\WatcherUI\obj\Debug\WatcherUI.csproj.Up2Date

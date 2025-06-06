@@ -14,6 +14,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Forms; 
+using System.Management;   
 
 namespace WatcherUI
 {
@@ -28,7 +30,16 @@ namespace WatcherUI
         }
         private void ShowButton_Click(object sender, RoutedEventArgs e)
         {
-            MyLabel.Visibility = Visibility.Visible;  // 또는 Visibility.Hidden
+            //MyLabel.Visibility = Visibility.Visible;  // 또는 Visibility.Hidden
+
+            var info = SystemInfoCollector.GetSystemInfo();
+            foreach (var item in info)
+            {
+                Console.WriteLine($"{item.Key}: {item.Value}");
+            }
+
+            // 예: TextBox에 표시
+            TxtOutput.Text = string.Join(Environment.NewLine, info.Select(i => $"{i.Key}: {i.Value}"));
         }
 
         public class SystemInfoCollector

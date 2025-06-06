@@ -7,11 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <!-- Label -->
-        <Label x:Name="MyLabel" Content="WatcherUI 실행 중" FontSize="16" HorizontalAlignment="Center" Margin="0,20,0,10" Visibility="Collapsed"/>
-
         <!-- Button -->
-        <Button x:Name="ShowButton" Content="레이블 보이기" Click="ShowButton_Click" Width="150" Height="30" HorizontalAlignment="Center"/>
+        <Button x:Name="ShowButton" Content="레이블 보이기" Click="ShowButton_Click" Width="150" Height="30" HorizontalAlignment="Center" Margin="0,280,0,0"/>
+
+        <TextBox x:Name="TxtOutput" AcceptsReturn="True" Margin="14,19,14,125"/>
 
     </Grid>
 </Window>
