@@ -2,9 +2,44 @@
 # 이 .gitignore 파일은 Microsoft(R) Visual Studio에서 자동으로 만들어졌습니다.
 ################################################################################
 
-/WatcherUI/.vs/WatcherUI/FileContentIndex/5e1cf8f4-66f7-4fbe-a203-960c73b48926.vsidx
-/WatcherUI/.vs/WatcherUI/FileContentIndex/3347755d-5a42-4512-b33c-e9804b1d3123.vsidx
-/WatcherUI/.vs/WatcherUI/FileContentIndex
-/WatcherUI/.vs/WatcherUI/v17/.suo
-/WatcherUI/.vs/WatcherUI/v17/DocumentLayout.backup.json
-/WatcherUI/.vs/WatcherUI/v17/DocumentLayout.json
+## 빌드 결과물
+bin/
+obj/
+Debug/
+Release/
+
+## 사용자 환경 설정
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio 관련
+.vs/
+
+## 기타
+*.log
+*.db
+*.cache
+*.sdf
+*.VC.db
+
+# ReSharper
+*.DotSettings.user
+
+# Rider
+.idea/
+
+# Test 결과
+TestResults/
+
+# 패키지 관리
+packages/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# 기타 시스템 파일
+Thumbs.db
+Desktop.ini
