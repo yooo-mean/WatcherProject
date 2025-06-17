@@ -15,7 +15,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Forms; 
-using System.Management;   
+using System.Management;
+using Newtonsoft.Json;
 
 namespace WatcherUI
 {
@@ -40,6 +41,12 @@ namespace WatcherUI
 
             // 예: TextBox에 표시
             TxtOutput.Text = string.Join(Environment.NewLine, info.Select(i => $"{i.Key}: {i.Value}"));
+
+            // JSON 문자열로 직렬화
+            string json = JsonConvert.SerializeObject(info, Formatting.Indented);
+
+            //테스트용 메시지 박스
+            System.Windows.Forms.MessageBox.Show(json);
         }
 
         public class SystemInfoCollector
