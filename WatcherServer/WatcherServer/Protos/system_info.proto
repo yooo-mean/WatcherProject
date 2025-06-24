@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "SystemInfoGrpc";
+
+service SystemInfoService {
+  rpc SendSystemInfo (SystemInfoRequest) returns (SystemInfoReply);
+}
+
+message SystemInfoRequest {
+  string json = 1;
+}
+
+message SystemInfoReply {
+  string message = 1;
+}
