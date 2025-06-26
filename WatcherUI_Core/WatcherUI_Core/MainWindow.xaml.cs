@@ -14,14 +14,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Forms; 
 using System.Management;
 using Newtonsoft.Json;
 using Grpc.Net.Client;
 using SystemInfoGrpc; // 자동 생성된 namespace
 using System.Threading.Tasks;
+using System.Xml;
 
-namespace WatcherUI
+namespace WatcherUI_Core
 {
     /// <summary>
     /// MainWindow.xaml에 대한 상호 작용 논리
@@ -46,10 +46,10 @@ namespace WatcherUI
             TxtOutput.Text = string.Join(Environment.NewLine, info.Select(i => $"{i.Key}: {i.Value}"));
 
             // JSON 문자열로 직렬화
-            string json = JsonConvert.SerializeObject(info, Formatting.Indented);
+            string json = JsonConvert.SerializeObject(info, Newtonsoft.Json.Formatting.Indented);
 
             //테스트용 메시지 박스
-            System.Windows.Forms.MessageBox.Show(json);
+            MessageBox.Show(json);
         }
 
         public class SystemInfoCollector
@@ -64,9 +64,9 @@ namespace WatcherUI
                 info["OSVersion"] = Environment.OSVersion.ToString();
 
                 // 모니터 해상도
-                var screen = Screen.PrimaryScreen.Bounds;
-                info["ScreenWidth"] = screen.Width.ToString();
-                info["ScreenHeight"] = screen.Height.ToString();
+                //var screen = Screen.PrimaryScreen.Bounds;
+                //info["ScreenWidth"] = screen.Width.ToString();
+                //info["ScreenHeight"] = screen.Height.ToString();
 
                 // IP 주소 & MAC 주소
                 var ipAddress = NetworkInterface

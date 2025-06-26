@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option csharp_namespace = "SystemInfoGrpc";
+
+package systeminfo;
+
+service SystemInfoService {
+  rpc SendSystemInfo (SystemInfoRequest) returns (SystemInfoResponse);
+}
+
+message SystemInfoRequest {
+  string username = 1;
+  string computerName = 2;
+  string ipAddress = 3;
+  string macAddress = 4;
+  string osVersion = 5;
+  string cpuInfo = 6;
+  string memoryInfo = 7;
+  string screenResolution = 8;
+}
+
+message SystemInfoResponse {
+  bool success = 1;
+  string message = 2;
+}
